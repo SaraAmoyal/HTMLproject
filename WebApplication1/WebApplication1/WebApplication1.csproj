@@ -1,0 +1,225 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CB52BD5-FED0-43F5-BA91-CD4918FF926B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audio\ריקוד במעגל.mp4" />
+    <Content Include="images\3age\DSC_5088-1-768x512.jpg" />
+    <Content Include="images\carusela\1913-l-500x333.jpg" />
+    <Content Include="images\carusela\5636f0_632f40fb16484ef3ba9d4dc4e47bc8ca.jpg" />
+    <Content Include="images\carusela\6100-l.jpg" />
+    <Content Include="images\carusela\9844-l-500x333.jpg" />
+    <Content Include="images\carusela\9930-l-500x333.jpg" />
+    <Content Include="images\carusela\9945_800x533.jpg" />
+    <Content Include="images\carusela\9993-l-500x333.jpg" />
+    <Content Include="images\carusela\צילום+ילדים+ומשפחות+%286%29.jpg" />
+    <Content Include="images\carusela\‏‏andaNb6130a-nc8mgvan13wapqhn32ogc083mdnvdd04e00xkfjcyo - עותק.jpg" />
+    <Content Include="images\children\456.jpg" />
+    <Content Include="images\children\andaKids070734a2-1024x684.jpg" />
+    <Content Include="images\children\dd-768x512.jpg" />
+    <Content Include="images\children\grove-023-Edit-1024x686.jpg" />
+    <Content Include="images\children\IMG_0029-Edit.jpg" />
+    <Content Include="images\children\IMG_2471.jpg" />
+    <Content Include="images\children\IMG_2618.jpg" />
+    <Content Include="images\children\IMG_7000.jpg" />
+    <Content Include="images\children\trgh-768x512.jpg" />
+    <Content Include="images\children\הורד %2813%29.jfif" />
+    <Content Include="images\children\ליאור-פדלון-1-1.jpg" />
+    <Content Include="images\‏‏‏‏305e6c_229190c8037144359407b22b14f692da_mv2_d_4285_2856_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\‏‏‏‏305e6c_5626eabbbd2d4119983d09b298195f59_mv2_d_1800_1200_s_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_097b97f05d9f4ee7b1d6857b2a3392f8_mv2_d_5472_3648_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_17ee3a362c944e3ea3554bc40c57a97c_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_229190c8037144359407b22b14f692da_mv2_d_4285_2856_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_26b3ee282a8b4ce3a8b4b4a1ba13d49b_mv2_d_5472_3648_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_27ad244fa30f4f2ca32f7bcc8b35e8a1_mv2_d_5472_3648_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_294fff508f4044d88b695844c3bb5729_mv2_d_2465_1643_s_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_337396eba8674b7ba42ece94741bb6c4_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_51d4105395f147af8058dedfca410937_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_5293d8431e3d46ddbc1dfcf03d8e0485_mv2_d_4686_3124_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_53d0cbd95cc342c5baa9b1e760e5798c_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_5626eabbbd2d4119983d09b298195f59_mv2_d_1800_1200_s_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_669f3f07098149c6b86fbe44dbad59a6_mv2_d_5472_3648_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_703f335f7b104a2dac7edc5051ae9024_mv2_d_4285_2856_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_72762813cfb545ce9c049e7d30384194_mv2_d_5472_3648_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_9498136fda0245b7a052d66d9774c5c2_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_9b09982948854912a22bd8262cd0444c_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_a928297b007b4153914432c9a09745b3_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_aa58b8c380ac4e1e9965fc92f08b94ec_mv2_d_1800_1200_s_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_ac6bce697ab64fc3abdf585ef3361907_mv2_d_2886_1924_s_2 - עותק - עותק.webp" />
+    <Content Include="images\3age\‏‏‏‏305e6c_e3b87b726419466280d5e83125cc4d9c_mv2_d_6720_4480_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\children\305e6c_72762813cfb545ce9c049e7d30384194_mv2_d_5472_3648_s_4_2.webp" />
+    <Content Include="images\children\305e6c_9498136fda0245b7a052d66d9774c5c2_mv2_d_6720_4480_s_4_2.webp" />
+    <Content Include="images\children\305e6c_a928297b007b4153914432c9a09745b3_mv2_d_6720_4480_s_4_2.webp" />
+    <Content Include="images\children\305e6c_aa58b8c380ac4e1e9965fc92f08b94ec_mv2_d_1800_1200_s_2.webp" />
+    <Content Include="images\children\305e6c_ac6bce697ab64fc3abdf585ef3361907_mv2_d_2886_1924_s_2.webp" />
+    <Content Include="images\children\305e6c_bcb3f1672bab48c98d8006d96794452d_mv2_d_6720_4480_s_4_2.webp" />
+    <Content Include="images\children\305e6c_e3b87b726419466280d5e83125cc4d9c_mv2_d_6720_4480_s_4_2.webp" />
+    <Content Include="images\children\305e6c_ecbc57a159ee4e8cb77a82d65c36c528_mv2_d_5472_3648_s_4_2.webp" />
+    <Content Include="images\carusela\‏‏‏‏305e6c_0deb819f67a047f2a84a1878dacb0759_mv2_d_5472_3648_s_4_2 - עותק - עותק.webp" />
+    <Content Include="images\carusela\‏‏‏‏305e6c_01bb03c6f00d4bea91dba863730c73ac_mv2_d_2480_1748_s_2 - עותק - עותק.webp" />
+    <Content Include="images\carusela\‏‏‏‏305e6c_2b87468ecb0a43ce8d105078a0bad2ab_mv2_d_4076_2718_s_4_2 - עותק - עותק.webp" />
+    <Content Include="fonts\journalclm-light-webfont.woff" />
+    <Content Include="images\special\‏‏305e6c_7d6e746e8a084c1fb3674ff1f8f01b4b_mv2_d_6720_4480_s_4_2 - עותק.webp" />
+    <Content Include="images\special\‏‏305e6c_6b9abd62a2684085addcffbb2c7cdea1_mv2_d_5472_3648_s_4_2 - עותק %282%29.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anim\927_text_welcome_109.gif" />
+    <Content Include="anim\t2030.gif" />
+    <Content Include="images\165789984e908db.jpg" />
+    <Content Include="images\arrow-up-01-512.png" />
+    <Content Include="images\newborn\0033_2-1.jpg" />
+    <Content Include="images\newborn\1913-l-500x333.jpg" />
+    <Content Include="images\newborn\9930-l-500x333.jpg" />
+    <Content Include="images\newborn\9945_800x533.jpg" />
+    <Content Include="images\newborn\andaNbFLOWERSBELLEPINK2.jpg" />
+    <Content Include="images\newborn\AndaNBRONI4502a2WL.jpg" />
+    <Content Include="images\newborn\DSC0801.jpg" />
+    <Content Include="images\newborn\DSC2401-1-1024x681.jpg" />
+    <Content Include="images\newborn\DSC6281.jpg" />
+    <Content Include="images\newborn\DSC9716.jpg" />
+    <Content Include="images\newborn\IMG_8682s.jpg" />
+    <Content Include="images\newborn\newborn_4941_mini.jpg" />
+    <Content Include="images\newborn\twins.jpg" />
+    <Content Include="images\newborn\yaelco_NB0055_final_s.jpg" />
+    <Content Include="images\newborn\ארם-1.jpg" />
+    <Content Include="images\newborn\ארם-2.jpg" />
+    <Content Include="images\newborn\בייבי-תכלת.jpg" />
+    <Content Include="images\newborn\גלית-צרפתי-2.jpg" />
+    <Content Include="images\newborn\הורד %2817%29.jfif" />
+    <Content Include="images\newborn\הורד %2818%29.jfif" />
+    <Content Include="images\newborn\הורד %2819%29.jfif" />
+    <Content Include="images\newborn\ניקול-סמית-2.jpg" />
+    <Content Include="map\data=BtJ4Rmgt1GzhWJrv-2cgMOINd1i9_5BN0cytYCgONkFy826fcrnxs_oZvjBaYJlOs0qGN9xuKYluEn9ri7A7xbEMsJ2OsyC8On4dV2a-IGrfNoo2pb2etsyBk_uQVhB9ECCVcQ0_Swc.png" />
+    <Content Include="pages\a0.html" />
+    <Content Include="pages\a1.html" />
+    <Content Include="pages\a2.html" />
+    <Content Include="pages\a3.html" />
+    <Content Include="pages\a4.html" />
+    <Content Include="pages\a5.html" />
+    <Content Include="pages\a6.html" />
+    <Content Include="pages\a7.html" />
+    <Content Include="pages\a8.html" />
+    <Content Include="pages\home.html" />
+    <Content Include="pages\Page1.html" />
+    <Content Include="pages\Page2.html" />
+    <Content Include="pages\Page3.html" />
+    <Content Include="pages\Page4.html" />
+    <Content Include="pages\Page5.html" />
+    <Content Include="pages\Page6.html" />
+    <Content Include="styles\StyleSheet1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62422</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62422/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
